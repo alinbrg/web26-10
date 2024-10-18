@@ -28,9 +28,151 @@
 			name="twitter:image"
 			content="https://raw.githubusercontent.com/alinbrg/web26-9/refs/heads/main/src/images/paraplanit-frena-gudaurshi-1.jpg"
 		/>
+		<link rel="stylesheet" href="style.css" />
 	</head>
+
 	<body>
 		<h1>lesson 10</h1>
 		<h2>meta tags</h2>
+
+		<section class="forms">
+			<form action="#">
+				<div class="form-row">
+					<label for="user-name">enter your name:</label>
+					<input
+						type="text"
+						id="user-name"
+						name="user-name"
+						required
+						placeholder="name example"
+					/>
+				</div>
+				<div class="form-row">
+					<label for="user-surname">enter your surname:</label>
+					<input
+						type="text"
+						id="user-surname"
+						name="user-surname"
+						placeholder="surname example"
+					/>
+				</div>
+				<div class="form-row">
+					<label for="user-email">enter your email:</label>
+					<input
+						type="email"
+						id="user-email"
+						name="user-email"
+						required
+						placeholder="example@gmail.com"
+					/>
+				</div>
+				<div class="form-row">
+					<label for="user-password">enter your password:</label>
+					<input
+						type="password"
+						id="user-password"
+						name="user-password"
+						minlength="4"
+						maxlength="10"
+						required
+						placeholder="enter your password"
+					/>
+				</div>
+				<div class="form-row">
+					<label for="user-phone">enter your phone:</label>
+					<input
+						type="tel"
+						id="user-phone"
+						name="user-phone"
+						placeholder="+995 555 55 55 55"
+					/>
+				</div>
+				<div class="form-row">
+					<label for="user-age">enter your age:</label>
+					<input
+						type="number"
+						id="user-age"
+						name="user-phone"
+						min="0"
+						max="100"
+						value="0"
+					/>
+				</div>
+				<div class="form-row">
+					<label for="user-birthdate">enter your birthdate:</label>
+					<input type="date" id="user-birthdate" name="user-birthdate" />
+				</div>
+				<div class="form-row">
+					<label for="user-photo"> upload your photo: </label>
+					<input type="file" id="user-photo" name="user-photo" />
+				</div>
+				<div class="form-row">
+					select gender:
+					<label for="male">
+						<input type="radio" value="male" name="gender" id="male" />
+						male
+					</label>
+					<label for="female">
+						<input type="radio" value="female" name="gender" id="female" />
+						female
+					</label>
+					<label for="other">
+						<input type="radio" value="other" name="gender" id="other" />
+						other
+					</label>
+				</div>
+				<div class="form-row">
+					<label for="terms">
+						<input type="checkbox" name="terms" id="terms" />
+						I agree to the terms
+					</label>
+				</div>
+				<div class="form-row">
+					<label for="conditions">
+						<input type="checkbox" name="conditions" id="conditions" />
+						I agree to the conditions
+					</label>
+				</div>
+
+				<div class="form-row">
+					<label for="user-country">select your country:</label>
+					<select name="user-country" id="user-country">
+						<option value="" selected disabled>Select country</option>
+						<option value="georgia">Georgia</option>
+						<option value="usa">USA</option>
+						<option value="uk">UK</option>
+						<option value="germany">Germany</option>
+					</select>
+				</div>
+				<div class="form-row">
+					<label for="user-city">select your city:</label>
+					<input
+						list="user-city-options"
+						id="user-city"
+						name="user-city"
+						placeholder="select city"
+					/>
+					<datalist id="user-city-options">
+						<option value="tbilisi"></option>
+						<option value="batumi"></option>
+						<option value="kutaisi"></option>
+						<option value="rustavi"></option>
+					</datalist>
+				</div>
+
+				<div class="form-row">
+					<label for="user-message">enter your message:</label>
+					<textarea
+						name="user-message"
+						id="user-message"
+						cols="30"
+						rows="10"
+						placeholder="enter your message"
+					></textarea>
+				</div>
+
+				<button type="submit">Submit</button>
+			</form>
+		</section>
 	</body>
 </html>
